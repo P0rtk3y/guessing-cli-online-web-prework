@@ -11,6 +11,7 @@ def run_guessing_game
     input = gets.chomp
     number = number_generator
       if input.downcase != 'exit'
+        puts "Goodbye!"
         break 
       elsif input.to_i == number 
         puts "You guessed the correct number!"
@@ -18,5 +19,4 @@ def run_guessing_game
         puts "The computer guessed #{number}."
       end 
   end 
-  puts "Goodbye!"
 end
