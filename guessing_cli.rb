@@ -10,7 +10,7 @@ def run_guessing_game
     puts "Guess a number between 1 and 6."
     input = gets.chomp
     number = number_generator
-      if input.downcase != 'exit'
+      if input.downcase == 'exit'
         puts "Goodbye!"
         break 
       elsif input.to_i == number 
